@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin dashboard</title>
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <script src="https://kit.fontawesome.com/91d0125610.js" crossorigin="anonymous"></script>
+   
+</head>
+<style>
+    
+   
+  body{
+    background-image: url('foodie.jfif');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+  }
+
+.b{
+    top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: all;
+      /*opacity: 0.7; */
+}
+
+
+.nav-link{
+    font-size: 20px;
+    font-family: times-new-romen;
+    
+
+}
+    #bt{
+        margin-left:3px;
+    }
+    .h1:hover{
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .Home{
+        color: white;
+        font-weight: bolder;
+        font-size: 22px;
+        padding: 16px;
+        
+    }
+    .Home:hover{
+        cursor: pointer;
+        color: orange;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+    .navbar{
+        border: 2px solid orange;
+        box-shadow: 2px 2px 2px 2px orange;
+    }
+   
+
+/*img {
+  opacity: 0.5;
+}*/
+</style>
+<body>
+    <div class="b">
+        <!-- <div class="body"></div> -->
+    <header class="header">
+        <!-- <div class="brand">
+            <p>School Managenment System</p>
+        </div> -->
+        
+        
+        <div class="navi" style="background-color: orange;">
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <h1 class="h1" style="font-weight: bolder; font-size: 50px; color: orange;">Foodie.</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+       
+                            <a class="Home"  class="nav-link" href="Administrator.html"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                            <div class="dropdown dropdown float-right">
+                                
+    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+      Profile Setup
+    </button>
+    <div class="dropdown-menu">
+       <a class="dropdown-item" href="profile_details.html">Profile Detail</a>
+      <a class="dropdown-item" href="adminchangepassword.php">Change Password</a>
+      
+    </div>
+  </div>
+</div>
+
+     <a class="Home"  class="nav-link" href="logout.php"> <i class="fa fa-power-off"></i> Logout</a>
+      
+    </form>
+  </div>
+</nav>
+        </div>
+    </header> 
+    <main >
+        
+        
+        <section>
+            <div  class="dash1 container col-sm-6 ">
+                <div style="background-color: orange;color: white;" class="ic container">
+                    <a class="dashLink" href="fetchdata.php">
+                        <img class="image" src="pictures/fee.png" alt="" sizes="" srcset="">
+                        Reservation
+                    </a>
+                </div>
+                <div style="background-color: orange; color: white;"  class="ic container">
+                    <a class="dashLink" href="viewdetail.php">
+                        <img class="image" src="pictures/2.png" alt="" srcset="">
+                        New Orders
+                    </a>    
+                </div>
+                 <div style="background-color: orange; color: white;"  class="ic container">
+                    <a class="dashLink" href="viewdetail.php">
+                        <img class="image" src="pictures/2.png" alt="" srcset="">
+                        remove & update Detail
+                    </a>    
+                </div>
+                
+            </div>
+
+           
+        </section>    
+                     
+    </main>
+    <footer>
+
+    </footer>
+    </div>
+    <!-- <script src="assets/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script></script>
+   
+</body>
+</html>

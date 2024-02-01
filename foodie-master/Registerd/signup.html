@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Signup Page</title>
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="signupstyle.css" />
+  <style>
+    
+      body{
+          
+        background-image: url(foodie.jfif);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          
+      }
+   
+    
+    </style>
+	
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>SignUp Here</h1>
+						</div>
+						<form  action="insertSignup.php" method="post">
+						<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="firstname" name="firstname" required placeholder="Enter your First Name">
+										<span class="form-label">FirstName</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="lastname" name="lastname" required placeholder="Enter your Last Name">
+										<span class="form-label">LastName</span>
+									</div>
+								</div>
+				
+							</div>
+
+                            <div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="email" name="email" required placeholder="Enter your Email">
+										<span class="form-label">Email</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="city" name="city" required placeholder="Enter City">
+										<span class="form-label">City</span>
+									</div>
+								</div>
+				
+							</div>
+
+                            <div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="password" name="password" required placeholder="Enter Password">
+										<span class="form-label">Password</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="password" name="cpassword" required placeholder="Confirm Password">
+										<span class="form-label">Confirm Password</span>
+									</div>
+								</div>
+				
+							</div>
+							<div class="row">
+                            
+
+<br><br>
+<a style="margin-left: 160px;">Already have an account. <a href="form.html" style="color: white;">LOGIN</a></a>
+
+                            
+                            
+                            </div>
+							<div class="form-btn">
+								<button class="submit-btn">Signup</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+}
+}
+	</script>
+
+</body>
+</html>

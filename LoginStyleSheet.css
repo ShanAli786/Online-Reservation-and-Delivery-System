@@ -1,0 +1,53 @@
+/* $blue: ; */
+ body{
+    /* background: #bab7af; */
+    background-image: url('hotel.jpeg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.login{
+    border: 2px solid #1f172728;
+    margin-top: 180px;
+    padding: 20px;
+    padding-top: 50px;
+    border-radius: 20px;
+    text-align: right;
+    background-color: rgba(125, 141, 138, 0.5);
+}
+
+#sp1{
+    text-align: center;
+    text-shadow: 2px black;
+    font-weight:  bolder;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button{
+    /* margin-right: 10px; */
+    background-color: #1686d9;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 6px 10px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+}
+.button:hover {
+    background-color: white;
+    color: #1686d9;
+    border: 2px solid #1686d9;
+    text-decoration: none;
+}
+
+@keyframes myfirst {
+    0%   {top: 0px; }
+    50%  { top: 68px; }
+    100% {top: 68px; }
+  }

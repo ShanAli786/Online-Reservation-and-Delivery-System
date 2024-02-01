@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Login Page</title>
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="formstyle.css" />
+  <style>
+    
+      body{
+          
+        background-image: url(foodie.jfif);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          
+      }
+   
+    
+    </style>
+	
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Login Here</h1>
+						</div>
+						<form  action="insertForm.php" method="post">
+						<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input class="form-control" type="username" name="username" required placeholder="Enter your Username or Email">
+										<span class="form-label">UserName</span>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input class="form-control" type="password" name="password"required placeholder="Enter your Pasword">
+										<span class="form-label">password</span>
+									</div>
+								</div>
+								
+								</div>
+							<div class="row">
+                            <input type="checkbox" style="margin-left: 25px;">    <label style="color: white;"> Remember me</label>
+
+<a href="#" style="text-align: right; margin-left: 300px; color: white;">Forget password? </a></label><br><br><br>
+<a style="margin-left: 160px;">Don't have an account. <a href="signup.html" style="color: white;">SIGN UP</a></a>
+
+                            
+                            
+                            </div>
+							<div class="form-btn">
+								<button class="submit-btn">Confirm</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+}
+}
+	</script>
+
+</body>
+</html>
